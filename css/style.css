@@ -1,0 +1,232 @@
+body {
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #b4ad9e;
+}
+
+a:hover {
+  color: #898377;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h2,
+h3 {
+  margin: 1rem 0;
+  font-size: 30px;
+}
+
+header .navbar {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+header .navbar-brand {
+  font-family: "Inconsolata", monospace;
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+header .nav-item {
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+header .nav-item a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+  height: 1px;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+header .nav-item a:hover::after {
+  transform: scale(1);
+}
+
+.slider {
+  margin-bottom: 50px;
+}
+
+.slider img {
+  border-radius: 10px;
+}
+
+.post-category,
+.link-more {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.post-category,
+.text,
+h2 {
+  text-align: center;
+}
+
+.post-title a {
+  color: #626262;
+}
+
+.grid-posts {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.grid-posts .card {
+  border: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.grid-posts .card img {
+  border-radius: 10px;
+}
+
+.grid-posts .card-body {
+  padding: 0 100px;
+}
+
+.grid-posts .card-img-top {
+  max-height: 350px;
+}
+
+.load-more {
+  padding: 1rem 2rem;
+  border-color: #626262;
+  border-radius: 5px;
+}
+
+.load-more span {
+  display: none;
+}
+
+.signup {
+  background-color: #f0f0f0;
+  padding: 70px 0;
+}
+
+.signup h3 {
+  color: #333;
+  font-size: 52px;
+}
+
+.signup form {
+  margin-top: 45px;
+}
+
+.signup .form-input {
+  position: relative;
+}
+
+.signup .form-control {
+  border: 0;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.signup .form-control:focus {
+  box-shadow: none;
+}
+
+.form-input .btn {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  color: #000;
+  font-family: "Inconsolata", monospace;
+}
+
+.footer-left a {
+  color: #000;
+  margin-right: 20px;
+}
+
+.footer-right a {
+  color: #626262;
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1199px) {
+  .grid-posts .card-img-top {
+    max-height: 300px;
+  }
+}
+
+/* Medium Devices, Desctops */
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 991px) {
+  header .nav-item {
+    margin-left: 0;
+  }
+
+  .grid-posts .card-img-top {
+    max-height: 220px;
+  }
+
+  .grid-posts .card-body {
+    padding: 0 30px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 767px) {
+  .grid-posts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-posts .cards {
+    margin-bottom: 50px;
+  }
+
+  .grid-posts .card-img-top {
+    max-height: 100%;
+  }
+
+  .footer-right a {
+    margin-left: 0px;
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-left {
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {}
